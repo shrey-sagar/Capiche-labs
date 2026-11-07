@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+::selection {
+  background: #2563eb;
+  color: white;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Default cursor */
+html,
+body,
+* {
+  cursor: auto;
+}
+
+/* Text cursor for typing fields */
+input,
+textarea {
+  cursor: text;
+}
+
+/* Pointer cursor for clickable elements */
+a,
+button,
+[role="button"] {
+  cursor: pointer;
+}
+::selection {
+  background: white;
+  color: black;
+}
+
+::-moz-selection {
+  background: white;
+  color: black;
+}
+.premium-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  opacity: 0;
+  transition: .4s;
+  background:
+    radial-gradient(
+      500px circle at var(--x) var(--y),
+      rgba(255,255,255,.12),
+      transparent 40%
+    );
+}
+
+.premium-card:hover::before {
+  opacity: 1;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+*:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
