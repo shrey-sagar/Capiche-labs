@@ -8,9 +8,10 @@ export default function SmoothScroll({
 }: {
   children: React.ReactNode;
 }) {
+
   useEffect(() => {
 
-    // Disable Lenis on mobile
+    // Disable smooth scroll on mobile
     if (window.innerWidth < 768) {
       return;
     }
@@ -18,22 +19,19 @@ export default function SmoothScroll({
     const lenis = new Lenis({
       duration: 1.2,
       smoothWheel: true,
-      wheelMultiplier: 1,
-      touchMultiplier: 1,
-      infinite: false,
     });
 
-    let frame: number;
+    let animationFrame: number;
 
     const raf = (time: number) => {
       lenis.raf(time);
-      frame = requestAnimationFrame(raf);
+      animationFrame = requestAnimationFrame(raf);
     };
 
-    frame = requestAnimationFrame(raf);
+    animationFrame = requestAnimationFrame(raf);
 
     return () => {
-      cancelAnimationFrame(frame);
+      cancelAnimationFrame(animationFrame);
       lenis.destroy();
     };
 
