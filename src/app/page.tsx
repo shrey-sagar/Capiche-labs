@@ -28,9 +28,9 @@ export default function Home() {
         <Services />
       </Reveal>
 
-      <Reveal>
+      
         <Projects />
-      </Reveal>
+      
 
       <Reveal>
         <About />
