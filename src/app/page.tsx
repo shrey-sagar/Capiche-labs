@@ -14,7 +14,7 @@ import FAQ from "@/components/sections/FAQ";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/layout/Footer";
 
-import Reveal from "@/components/effects/Reveal";
+
 
 export default function Home() {
   return (
@@ -33,38 +33,32 @@ export default function Home() {
         
       
 
-      <Reveal>
+      
         <About />
-      </Reveal>
+      
 
-      <Reveal>
+
+      
         <TechStack />
-      </Reveal>
+     
 
-      <Reveal>
+      
         <Process />
-      </Reveal>
-
-      <Reveal>
+      
+      
         <Stats />
-      </Reveal>
+     
 
-      <Reveal>
+     
         <LogoMarquee />
-      </Reveal>
+      
 
-      <Reveal>
         <Testimonials />
-      </Reveal>
 
-      <Reveal>
         <FAQ />
-      </Reveal>
 
-      <Reveal>
         <Contact />
-      </Reveal>
-<Reveal><CTA /></Reveal>
+          <CTA />
       
 
       {/* Footer stays normal */}

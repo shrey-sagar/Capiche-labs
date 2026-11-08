@@ -8,34 +8,29 @@ export default function SmoothScroll({
 }: {
   children: React.ReactNode;
 }) {
-
   useEffect(() => {
-
-    // Disable smooth scroll on mobile
-    if (window.innerWidth < 768) {
-      return;
-    }
+    // Disable on mobile devices
+    if (window.innerWidth < 768) return;
 
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1.1,
       smoothWheel: true,
     });
 
-    let animationFrame: number;
+    let frameId: number;
 
-    const raf = (time: number) => {
+    const animate = (time: number) => {
       lenis.raf(time);
-      animationFrame = requestAnimationFrame(raf);
+      frameId = requestAnimationFrame(animate);
     };
 
-    animationFrame = requestAnimationFrame(raf);
+    frameId = requestAnimationFrame(animate);
 
     return () => {
-      cancelAnimationFrame(animationFrame);
+      cancelAnimationFrame(frameId);
       lenis.destroy();
     };
-
   }, []);
 
-  return <>{children}</>;
+  return children;
 }

@@ -7,30 +7,30 @@ import { useInView } from "react-intersection-observer";
 import Container from "@/components/ui/Container";
 
 const stats = [
-  {
-    number: 150,
-    suffix: "+",
-    title: "Projects Delivered",
-    description: "Successfully completed across AI, Web & Cloud.",
-  },
-  {
-    number: 98,
-    suffix: "%",
-    title: "Client Satisfaction",
-    description: "Trusted by startups and enterprise businesses.",
-  },
-  {
-    number: 24,
-    suffix: "/7",
-    title: "Support",
-    description: "Continuous monitoring and technical assistance.",
-  },
-  {
-    number: 12,
-    suffix: "+",
-    title: "Core Technologies",
-    description: "Modern frameworks powering every solution.",
-  },
+{
+  number: 5,
+  suffix: "+",
+  title: "AI Solutions Built",
+  description: "Exploring AI, Web & Cloud technologies to solve real problems.",
+},
+{
+  number: 10,
+  suffix: "+",
+  title: "Technologies Explored",
+  description: "Working with modern frameworks and development tools.",
+},
+{
+  number: 100,
+  suffix: "%",
+  title: "Innovation Focus",
+  description: "Committed to building scalable and impactful solutions.",
+},
+{
+  number: 24,
+  suffix: "/7",
+  title: "Learning & Growth",
+  description: "Continuously improving with emerging technologies.",
+},
 ];
 
 export default function Stats() {

@@ -43,18 +43,17 @@ export default function Loader() {
           {/* Glow */}
 
           <motion.div
-            animate={{
-              scale: [1, 1.2, 1],
-              opacity: [.15,.3,.15],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 4,
-            }}
-            className="absolute h-[500px] w-[500px] rounded-full bg-white blur-[180px]"
-          />
+    animate={{
+      opacity: [0.15, 0.25, 0.15],
+      }}
+       transition={{
+     repeat: Infinity,
+    duration: 4,
+  }}
+  className="absolute h-[280px] w-[280px] rounded-full bg-white blur-[120px] md:h-[500px] md:w-[500px] md:blur-[180px]"
+/>
 
-          <div className="relative text-center">
+          <div className="relative w-full max-w-[90%] px-5 text-center">
 
             {/* Line */}
 
@@ -85,7 +84,7 @@ export default function Loader() {
               transition={{
                 delay: .4,
               }}
-              className="text-6xl font-black tracking-[0.25em] text-white md:text-8xl"
+              className="text-4xl font-black tracking-[0.18em] text-white sm:text-5xl md:text-8xl"
             >
               CAPICHE
             </motion.h1>
@@ -102,7 +101,7 @@ export default function Loader() {
               transition={{
                 delay: .8,
               }}
-              className="mt-2 text-4xl font-light tracking-[0.55em] text-neutral-300 md:text-5xl"
+              className="mt-2 text-2xl font-light tracking-[0.35em] text-neutral-300 sm:text-3xl md:text-5xl"
             >
               LABS
             </motion.h2>
@@ -117,14 +116,14 @@ export default function Loader() {
               transition={{
                 delay: 1.3,
               }}
-              className="mt-8 text-sm uppercase tracking-[0.7em] text-neutral-500"
+              className="mt-6 text-xs uppercase tracking-[0.35em] text-neutral-500 sm:text-sm md:tracking-[0.7em]"
             >
               AI • SOFTWARE • CLOUD
             </motion.p>
 
             {/* Progress */}
 
-            <div className="mx-auto mt-14 h-[2px] w-60 overflow-hidden rounded-full bg-white/10">
+            <div className="mx-auto mt-10 h-[2px] w-40 overflow-hidden rounded-full bg-white/10 sm:w-60">
 
               <motion.div
                 initial={{
