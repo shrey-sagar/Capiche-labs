@@ -24,13 +24,12 @@ export default function Home() {
       {/* Hero stays without Reveal */}
       <Hero />
 
-      <Reveal>
+      
         <Services />
-      </Reveal>
-
-      <Reveal>
+      
+      
         <Projects />
-        </Reveal>
+        
         
       
 
