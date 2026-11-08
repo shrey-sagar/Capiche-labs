@@ -121,11 +121,11 @@ export default function Footer() {
                   },
                   {
                     icon: <FaLinkedin size={20} />,
-                    href: "https://linkedin.com",
+                    href: "https://www.linkedin.com/company/capiche-labs/",
                   },
                   {
                     icon: <FaInstagram size={20} />,
-                    href: "https://instagram.com",
+                    href: "https://www.instagram.com/capichelabs/",
                   },
                 ].map((item, index) => (
 
